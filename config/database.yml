@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: UTF-8
-  database: vecindalo_dev
+  database: en_el_sillon_dev
   pool: 5
   username: en_el_sillon
   password: en_el_sillon
@@ -14,7 +14,7 @@ development:
 test:
   adapter: postgresql
   encoding: UTF-8
-  database: vecindalo_test
+  database: en_el_sillon_test
   pool: 5
   username: en_el_sillon
   password: en_el_sillon
@@ -24,7 +24,7 @@ test:
 production:
   adapter: postgresql
   encoding: UTF-8
-  database: vecindalo_prd
+  database: en_el_sillon_prd
   pool: 5
   username: en_el_sillon
   password: en_el_sillon
