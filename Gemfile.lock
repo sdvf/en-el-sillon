@@ -1,17 +1,17 @@
 GIT
-  remote: git://github.com/avit/ransack.git
-  revision: c76dee3a16e257be3ee7d316148512aab1b5b0a0
-  branch: rails4-dependencies
+  remote: git://github.com/ernie/ransack.git
+  revision: 39244a3df1c29c86f85d338158d398b70f6e92e6
+  branch: rails-4
   specs:
     ransack (0.7.3)
-      actionpack
-      activerecord
-      polyamorous
+      actionpack (~> 4.0.0)
+      activerecord (~> 4.0.0)
+      polyamorous (~> 0.6.0)
 
 GIT
   remote: git://github.com/gregbell/active_admin.git
-  revision: bcf27d58ec376c3327ca21ca9545dcab079e29d8
-  branch: "metasearch->ransack"
+  revision: a9949c1524205928b18597f840e83478ba97c2ef
+  branch: rails4
   specs:
     activeadmin (0.6.0)
       arbre (>= 1.0.1)
@@ -26,6 +26,24 @@ GIT
       rails (>= 3.2.0)
       ransack (>= 0.7.0)
       sass-rails (>= 3.2.0)
+
+GIT
+  remote: git://github.com/josevalim/inherited_resources.git
+  revision: ae1516a3f1a01f98beac3334f76831a1c793c521
+  specs:
+    inherited_resources (1.4.1)
+      has_scope (~> 0.6.0.rc)
+      responders (~> 1.0.0.rc)
+
+GIT
+  remote: git://github.com/plataformatec/devise.git
+  revision: 591f4a97f78c96031458efa046796f4089c197bf
+  specs:
+    devise (3.0.1)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      warden (~> 1.2.3)
 
 GEM
   remote: https://rubygems.org/
@@ -70,11 +88,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-    devise (3.0.1)
-      bcrypt-ruby (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -85,9 +98,6 @@ GEM
       activesupport (>= 3.2, < 5)
     hike (1.2.3)
     i18n (0.6.4)
-    inherited_resources (1.4.1)
-      has_scope (~> 0.6.0.rc)
-      responders (~> 1.0.0.rc)
     jbuilder (1.4.2)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
@@ -172,7 +182,8 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   coffee-rails (~> 4.0.0)
-  devise
+  devise!
+  inherited_resources!
   jbuilder (~> 1.2)
   jquery-rails
   pg
