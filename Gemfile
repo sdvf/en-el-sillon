@@ -35,6 +35,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+#Devise and activeadmin
+gem 'ransack', github: 'avit/ransack', branch: 'rails4-dependencies'
+gem 'activeadmin', github: 'gregbell/active_admin', branch: '"metasearch->ransack"'
+
+#Authentication
+gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

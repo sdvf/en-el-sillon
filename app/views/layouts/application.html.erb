@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>EnElSillon</title>
+ 	<!-- This allows a specific title per view -->
+	<title>Presidencias Argentinas - <%= h yield(:title) %></title>
+
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+  <%= yield :javascript_includes %>
+
+  <meta property="og:title" content="Vecindalo" />
+  <meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.presidenciasargentinas.com" />
+  <meta property="og:image" content="http://www.vecindalo.com/assets/v.png" />
+  <meta property="og:site_name" content="Presidencias Argentinas" />
+  <meta property="fb:app_id" content="392464920823263" />
+  <meta property="og:description"
+        content="Presidencias Argentinas es un sitio donde encontraras los distintos presidentes de nuestro país."/>
+	<%= csrf_meta_tags %>
 </head>
 <body>
 
