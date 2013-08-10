@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/ernie/ransack.git
-  revision: 39244a3df1c29c86f85d338158d398b70f6e92e6
+  revision: 8db7a3c1f4242305488a541267dd87c5397f5707
   branch: rails-4
   specs:
     ransack (0.7.3)
@@ -37,12 +37,13 @@ GIT
 
 GIT
   remote: git://github.com/plataformatec/devise.git
-  revision: 591f4a97f78c96031458efa046796f4089c197bf
+  revision: 87edf0fbcfc6229661289887ef930b0ff2ecad9e
   specs:
     devise (3.0.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
       warden (~> 1.2.3)
 
 GEM
@@ -75,7 +76,7 @@ GEM
     arbre (1.0.1)
       activesupport (>= 3.0.0)
     arel (4.0.0)
-    atomic (1.1.10)
+    atomic (1.1.12)
     bcrypt-ruby (3.1.1)
     bourbon (3.1.8)
       sass (>= 3.2.0)
@@ -98,7 +99,7 @@ GEM
       activesupport (>= 3.2, < 5)
     hike (1.2.3)
     i18n (0.6.4)
-    jbuilder (1.4.2)
+    jbuilder (1.5.0)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
     jquery-rails (3.0.4)
@@ -111,12 +112,13 @@ GEM
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
+    libv8 (3.11.8.17)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.23)
     minitest (4.7.5)
-    multi_json (1.7.7)
+    multi_json (1.7.8)
     orm_adapter (0.4.0)
     pg (0.16.0)
     polyamorous (0.6.3)
@@ -141,9 +143,10 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    ref (1.0.5)
     responders (1.0.0.rc)
       railties (>= 3.2, < 5)
-    sass (3.2.9)
+    sass (3.2.10)
     sass-rails (4.0.0)
       railties (>= 4.0.0.beta, < 5.0)
       sass (>= 3.1.10)
@@ -160,6 +163,9 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    therubyracer (0.11.4)
+      libv8 (~> 3.11.8.12)
+      ref
     thor (0.18.1)
     thread_safe (0.1.2)
       atomic
@@ -183,6 +189,7 @@ DEPENDENCIES
   activeadmin!
   coffee-rails (~> 4.0.0)
   devise!
+  execjs
   inherited_resources!
   jbuilder (~> 1.2)
   jquery-rails
@@ -191,5 +198,6 @@ DEPENDENCIES
   ransack!
   sass-rails (~> 4.0.0)
   sdoc
+  therubyracer
   turbolinks
   uglifier (>= 1.3.0)
